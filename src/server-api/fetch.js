@@ -30,7 +30,7 @@ export default {
             if (res.data.code == '000') {
                 return res.data.data;
             };
-        }).catch( res => console.log(`get请求 - ${res.request.responseURL} 发生错误`) );
+        }).catch( res => console.log(`post请求 - ${res.request.responseURL} 发生错误`) );
     },
 
     axiosFormData: (url, params) => {
@@ -45,6 +45,6 @@ export default {
             if(res.data.code == 200) {
                 return res.data.data;
             };
-        }).catch( res => console.log(`get请求 - ${res.request.responseURL} 发生错误`) );
+        }).catch( res => console.log(`formdata请求 - ${res.request.responseURL} 发生错误`) );
     },
 }
